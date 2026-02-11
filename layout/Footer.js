@@ -30,7 +30,7 @@ const Footer1 = () => {
               <div className="single-footer-widget me-xxl-5 pe-xxl-4">
                 <div className="widget-head">
                   <Link href="/">
-                    <img src="assets/img/logo/black-logo.png" alt="logo-img" />
+                    <img src="assets/img/logo/logo2.png" alt="logo-img" width={200}/>
                   </Link>
                 </div>
                 <div className="footer-content">
@@ -177,17 +177,17 @@ const Footer1 = () => {
                       <div className="contact-infu">
                         <span>Address:</span>
                         <h5 className="text-lowercase">
-                          3770 Hidden Meadow Drive Venturia, ND 58489
+                          Chennai
                         </h5>
                       </div>
                     </div>
                     <div className="contact">
-                      <a href="#">
+                      <a href="/contact">
                         <i className="fal fa-phone-alt" />
                       </a>
                       <div className="contact-infu">
                         <span>Phone:</span>
-                        <h5>(704) 555-0127</h5>
+                        <h5>98849 28040</h5>
                       </div>
                     </div>
                   </div>
@@ -339,8 +339,8 @@ const FooterContent = ({
     {
       icon: "fal fa-phone-alt",
       title: "Phone:",
-      info: "(704) 555-0127",
-      href: "tel:(704) 555-0127",
+      info: "98849 28040",
+      href: "tel:98849 28040",
     },
   ];
 
@@ -477,7 +477,7 @@ const FooterContent = ({
       <div className="footer-bottom style-2">
         <div className="container">
           <div className="footer-bottom-wrapper d-flex align-items-center justify-content-between">
-            <p>Copyright 2025 Zotech All Rights Reserved</p>
+            <p>Copyright 2025 Colytics All Rights Reserved</p>
             <div className="security ">
               <Link href="/contact">Privacy policy</Link>/
               <Link href="/contact">Terms &amp; Condition </Link>/

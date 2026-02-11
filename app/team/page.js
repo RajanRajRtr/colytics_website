@@ -4,8 +4,8 @@ import ZotechLayout from "@/layout/ZotechLayout";
 const page = () => {
   const teamMembers = [
     {
-      role: "Marketing Manager",
-      name: "Emma Taylor",
+      role: "CTO",
+      name: "Karthik Palani",
       image: "assets/img/team/05.jpg",
       delay: "200ms",
     },
@@ -15,42 +15,42 @@ const page = () => {
       image: "assets/img/team/06.jpg",
       delay: "400ms",
     },
-    {
-      role: "Warehouse Manager",
-      name: "Sophia Brown",
-      image: "assets/img/team/07.jpg",
-      delay: "600ms",
-    },
-    {
-      role: "Marketing Manager",
-      name: "Christopher Mark",
-      image: "assets/img/team/08.jpg",
-      delay: "800ms",
-    },
-    {
-      role: "Marketing Manager",
-      name: "Emma Taylor",
-      image: "assets/img/team/02.jpg",
-      delay: "200ms",
-    },
-    {
-      role: "Fleet Supervisor",
-      name: "James Anderson",
-      image: "assets/img/team/01.jpg",
-      delay: "400ms",
-    },
-    {
-      role: "Warehouse Manager",
-      name: "Sophia Brown",
-      image: "assets/img/team/04.jpg",
-      delay: "600ms",
-    },
-    {
-      role: "Marketing Manager",
-      name: "Christopher Mark",
-      image: "assets/img/team/03.jpg",
-      delay: "800ms",
-    },
+    // {
+    //   role: "Warehouse Manager",
+    //   name: "Sophia Brown",
+    //   image: "assets/img/team/07.jpg",
+    //   delay: "600ms",
+    // },
+    // {
+    //   role: "Marketing Manager",
+    //   name: "Christopher Mark",
+    //   image: "assets/img/team/08.jpg",
+    //   delay: "800ms",
+    // },
+    // {
+    //   role: "Marketing Manager",
+    //   name: "Emma Taylor",
+    //   image: "assets/img/team/02.jpg",
+    //   delay: "200ms",
+    // },
+    // {
+    //   role: "Fleet Supervisor",
+    //   name: "James Anderson",
+    //   image: "assets/img/team/01.jpg",
+    //   delay: "400ms",
+    // },
+    // {
+    //   role: "Warehouse Manager",
+    //   name: "Sophia Brown",
+    //   image: "assets/img/team/04.jpg",
+    //   delay: "600ms",
+    // },
+    // {
+    //   role: "Marketing Manager",
+    //   name: "Christopher Mark",
+    //   image: "assets/img/team/03.jpg",
+    //   delay: "800ms",
+    // },
   ];
   return (
     <ZotechLayout>
