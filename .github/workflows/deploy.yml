@@ -7,21 +7,52 @@ on:
 
 jobs:
   deploy:
+    name: Deploy Application
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ Checkout repository
       - name: Checkout Code
         uses: actions/checkout@v3
 
+      # 2️⃣ Setup Node (optional but recommended)
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      # 3️⃣ Deploy to EC2 via SSH
       - name: Deploy to EC2 Server
         uses: appleboy/ssh-action@v0.1.6
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_KEY }}
+          port: 22
+          script_stop: true
+          timeout: 30s
+          command_timeout: 10m
+          debug: false   # change to true if troubleshooting
           script: |
-            cd colytics_website
-            git pull origin main
+            echo "🚀 Starting Deployment"
+
+            # Navigate to project folder
+            cd /home/ubuntu/colytics_website || exit 1
+
+            echo "📥 Pulling latest code..."
+            git fetch origin
+            git reset --hard origin/main
+
+            echo "📦 Installing dependencies..."
             npm install
+
+            echo "🏗 Building project..."
             npm run build
-            pm2 restart all
+
+            echo "♻ Restarting PM2..."
+            pm2 restart colytics || pm2 start npm --name "colytics" -- start
+
+            echo "💾 Saving PM2 process list..."
+            pm2 save
+
+            echo "✅ Deployment Finished Successfully"
