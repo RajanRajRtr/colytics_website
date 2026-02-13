@@ -19,9 +19,19 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_KEY }}
+          port: 22
+          script_stop: true
           script: |
-            cd colytics_website
-            git pull origin main
+            echo "🚀 Starting Deployment"
+
+            cd /home/ubuntu/colytics_website || exit 1
+
+            git fetch origin
+            git reset --hard origin/main
+
             npm install
             npm run build
-            pm2 restart all
+
+            pm2 restart colytics || pm2 start npm --name "colytics" -- start
+
+            echo "✅ Deployment Finished"
