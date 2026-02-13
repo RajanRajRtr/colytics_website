@@ -1,1 +1,11 @@
 node_modules
+
+# next build output
+.next/
+
+# production build (if using export)
+out/
+
+# environment variables
+.env
+.env.local
