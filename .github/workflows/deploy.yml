@@ -37,7 +37,7 @@ jobs:
             echo "🚀 Starting Deployment"
 
             # Navigate to project folder
-            cd /var/www/html || exit 1
+            cd /var/www/html/colytics_website || exit 1
 
             echo "📥 Pulling latest code..."
             git fetch origin
