@@ -27,7 +27,7 @@ const page = () => {
             <div className="row">
               <div className="col-xl-6 col-lg-6 col-md-12 col-12">
                 <div className="hero-content pe-xl-3 text-lg-start text-center ">
-                  <h1>Empowering Idess with Technological Excellence</h1>
+                  <h1>Empowering Ideas with Technological Excellence</h1>
                   <p>
                     In today's competitive business, the demand for efficient
                     and cost-effective IT solutions has never been more
