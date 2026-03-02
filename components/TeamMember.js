@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const teamMembers = [
   {
-    role: "Marketing Manager",
-    name: "Emma Taylor",
+    role: "Director/CTO",
+    name: "KarthikPalani",
     image: "assets/img/team/05.jpg",
     delay: "200ms",
   },
@@ -13,18 +13,18 @@ const teamMembers = [
     image: "assets/img/team/06.jpg",
     delay: "400ms",
   },
-  {
-    role: "Warehouse Manager",
-    name: "Sophia Brown",
-    image: "assets/img/team/07.jpg",
-    delay: "600ms",
-  },
-  {
-    role: "Marketing Manager",
-    name: "Christopher Mark",
-    image: "assets/img/team/08.jpg",
-    delay: "800ms",
-  },
+  // {
+  //   role: "Warehouse Manager",
+  //   name: "Sophia Brown",
+  //   image: "assets/img/team/07.jpg",
+  //   delay: "600ms",
+  // },
+  // {
+  //   role: "Marketing Manager",
+  //   name: "Christopher Mark",
+  //   image: "assets/img/team/08.jpg",
+  //   delay: "800ms",
+  // },
 ];
 
 const TeamMember = () => {
@@ -113,8 +113,8 @@ export const TeamMember2 = () => {
           {[
             {
               image: "assets/img/team/01.jpg",
-              role: "Warehouse Manager",
-              name: "Christopher Donovan",
+              role: "Director / CTO",
+              name: "KarthikPalani",
               delay: "200ms",
             },
             {
@@ -123,18 +123,18 @@ export const TeamMember2 = () => {
               name: "Michael Carter",
               delay: "400ms",
             },
-            {
-              image: "assets/img/team/03.jpg",
-              role: "Fleet Supervisor",
-              name: "James Anderson",
-              delay: "600ms",
-            },
-            {
-              image: "assets/img/team/04.jpg",
-              role: "Project Manager",
-              name: "Daniel Thompson",
-              delay: "800ms",
-            },
+            // {
+            //   image: "assets/img/team/03.jpg",
+            //   role: "Fleet Supervisor",
+            //   name: "James Anderson",
+            //   delay: "600ms",
+            // },
+            // {
+            //   image: "assets/img/team/04.jpg",
+            //   role: "Project Manager",
+            //   name: "Daniel Thompson",
+            //   delay: "800ms",
+            // },
           ].map((member, index) => (
             <div
               key={index}
